@@ -1,9 +1,10 @@
-#LIBRARY MANAGEMENT API
+### Library Management API Documentation
 
 The **Library Management API** is a backend solution built using PHP and the Slim framework, designed for managing library operations. It offers endpoints for user registration, authentication, and efficient management of authors, books, and their associations. The API employs **JSON Web Tokens (JWT)** to ensure secure authentication and token handling.
+
 ---
 
-**Features**
+### **Features**
 - **User Management**: Register, authenticate, view, update, and delete users.
 - **Author Management**: Register, view, update, and delete author details.
 - **Book Management**: Register, view, update, and delete books.
@@ -12,7 +13,7 @@ The **Library Management API** is a backend solution built using PHP and the Sli
 
 ---
 
-**Requirements**
+### **Requirements**
 - **PHP** 7.4 or higher
 - **MySQLyog**
 - **XAMPP**
@@ -24,7 +25,7 @@ The **Library Management API** is a backend solution built using PHP and the Sli
 
 ---
 
-**Installation**
+### **Installation**
 1. **Clone the Repository**  
    ```bash
    git clone https://github.com/aplejoy/Library_API.git
@@ -39,9 +40,9 @@ The **Library Management API** is a backend solution built using PHP and the Sli
 
 ---
 
-**API Endpoints**
+### **API Endpoints**
 
-**User Management**
+#### **User Management**
 - **Register User**  
   **Endpoint**: `/user/register`  
   **Method**: `POST`  
@@ -84,7 +85,7 @@ The **Library Management API** is a backend solution built using PHP and the Sli
 
 ---
 
-**Author Management**
+#### **Author Management**
 - **Register Author**  
   **Endpoint**: `/author/register`  
   **Method**: `POST`  
@@ -119,7 +120,7 @@ The **Library Management API** is a backend solution built using PHP and the Sli
 
 ---
 
-**Book Management**
+#### **Book Management**
 - **Register Book**  
   **Endpoint**: `/book/register`  
   **Method**: `POST`  
@@ -154,7 +155,7 @@ The **Library Management API** is a backend solution built using PHP and the Sli
 
 ---
 
-**Book-Author Association**
+#### **Book-Author Association**
 - **Associate Book and Author**  
   **Endpoint**: `/book_author/register`  
   **Method**: `POST`  
@@ -189,6 +190,7 @@ The **Library Management API** is a backend solution built using PHP and the Sli
 
 ---
 
-**Token Management**
+#### **Token Management**
 - **Generate Token**: Tokens are automatically created during user authentication and stored in the database with an `active` status.
 - **Validate Token**: The `validateToken` function ensures token validity by decoding and verifying its status while extracting user details.
+
