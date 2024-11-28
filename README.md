@@ -1,4 +1,4 @@
-#<**LIBRARY MANAGEMENT API**>
+#LIBRARY MANAGEMENT API
 
 The **Library Management API** is a backend solution built using PHP and the Slim framework, designed for managing library operations. It offers endpoints for user registration, authentication, and efficient management of authors, books, and their associations. The API employs **JSON Web Tokens (JWT)** to ensure secure authentication and token handling.
 ---
